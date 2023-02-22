@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/menu_home"
+        />
+
+    <item android:title="Profile"
+        android:icon="@drawable/ic_user_profile"
+        android:id="@+id/menu_profile"
+        />
+    <item android:title="Self Diagnosis"
+        android:icon="@drawable/ic_diagnosis"
+        android:id="@+id/menu_diagnosis"
+        />
+    <item android:title="Call"
+        android:icon="@drawable/ic_call"
+        android:id="@+id/menu_call"
+        />
+</menu>

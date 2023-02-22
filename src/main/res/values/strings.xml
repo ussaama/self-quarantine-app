@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Corontine App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sensitivity_text">We understand the sensitivity and nature of this topic and have taken string measure to ensure that your data is not compromised.</string>
+    <string name="device_location">It is recommended that you set you location sharing to Always. You can also change it anytime later on.</string>
+    <string name="data_sharing">Your Data will be shared only with the Government of Pakistan. The App does not allow any of your information to be disclosed to the public at any time</string>
+    <string name="agrrement_note">If you would like to contribute towards a safer Pakistan please indicate your acceptance of the <a href="http://www.google.com"><font color='#0000FF'>Terms of Services</font></a> and <a href="http://www.google.com"><font color='#0000FF'>Privacy Policy</font></a> by clicking on the button below.</string>
+    <string name="diagnose_status">Status: <font color='#FF0000'>Not Completed</font></string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string-array name="nationalityitems">
+        <item>Pakistani</item>
+        <item>Foreign</item>
+    </string-array>
+
+    <string-array name="provinceitems">
+        <item>Punjab</item>
+        <item>Sindh</item>
+        <item>Kpk</item>
+        <item>Balochistan</item>
+
+    </string-array>
+
+    <string-array name="cityitems">
+        <item>Islamabad</item>
+        <item>Karachi</item>
+        <item>Lahore</item>
+    </string-array>
+
+    <string name = "bold" tools:ignore="ReferenceType">@font/rubikbold</string>
+    <string name = "regular" tools:ignore="ReferenceType">@font/rubiklight</string>
+    <string name = "light" tools:ignore="ReferenceType">@font/rubikregular</string>
+
+</resources>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelfDiagnoseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:layout_marginLeft="15dp"
+       android:layout_marginRight="15dp"
+       android:paddingBottom="50dp"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Select Today's Symptoms"
+           android:textColor="@color/black"
+           android:gravity="center"
+           android:layout_marginBottom="20dp"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Fever - above 37.5 degrees"
+       android:textColor="@color/black"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:textSize="16sp"
+       android:layout_marginTop="20dp"
+       android:textStyle="bold"
+       />
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           android:gravity="center_horizontal"
+           android:orientation="horizontal"
+            >
+
+
+       <RadioButton
+           android:id="@+id/feverradioYES"
+           android:layout_width="80dp"
+           android:gravity="center"
+           android:layout_height="wrap_content"
+           android:button="@android:color/transparent"
+           android:checked="true"
+           android:paddingLeft="16sp"
+           android:paddingTop="3sp"
+           android:paddingRight="16sp"
+           android:layout_weight="1"
+           android:background="@drawable/radio_button_selector"
+           android:paddingBottom="3sp"
+           android:text="@string/yes"
+           android:textColor="@color/white" />
+
+       <RadioButton
+           android:id="@+id/feverradioNO"
+           android:gravity="center"
+           android:layout_width="80dp"
+           android:layout_weight="1"
+           android:background="@drawable/radio_button_selector"
+           android:layout_height="wrap_content"
+           android:button="@android:color/transparent"
+           android:paddingLeft="16sp"
+           android:paddingTop="3sp"
+           android:paddingRight="16sp"
+           android:paddingBottom="3sp"
+           android:text="@string/no"
+           android:textColor="@color/fbBlue" />
+
+       </RadioGroup>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="20dp"
+           android:background="#D3D3D3"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+
+           />
+
+       <!--cough radio-->
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Cough"
+           android:textColor="@color/black"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="8dp"
+           android:textSize="16sp"
+           android:layout_marginTop="20dp"
+           android:textStyle="bold"
+           />
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           android:gravity="center_horizontal"
+           android:orientation="horizontal"
+           >
+
+
+           <RadioButton
+               android:id="@+id/coughradioYES"
+               android:layout_width="80dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@drawable/radio_button_selector"
+               android:button="@android:color/transparent"
+               android:checked="true"
+               android:gravity="center"
+
+               android:paddingLeft="16sp"
+               android:paddingTop="3sp"
+               android:paddingRight="16sp"
+               android:paddingBottom="3sp"
+               android:text="@string/yes"
+               android:textColor="@color/white" />
+
+           <RadioButton
+               android:id="@+id/coughradioNO"
+               android:gravity="center"
+               android:layout_width="80dp"
+               android:layout_weight="1"
+               android:background="@drawable/radio_button_selector"
+               android:layout_height="wrap_content"
+               android:button="@android:color/transparent"
+               android:paddingLeft="16sp"
+
+               android:paddingTop="3sp"
+               android:paddingRight="16sp"
+               android:paddingBottom="3sp"
+               android:text="@string/no"
+               android:textColor="@color/fbBlue" />
+
+       </RadioGroup>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="20dp"
+           android:background="#D3D3D3"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+
+           />
+
+       <!--cough radio-->
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Sore Throat"
+           android:textColor="@color/black"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="8dp"
+           android:textSize="16sp"
+           android:layout_marginTop="20dp"
+           android:textStyle="bold"
+           />
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           android:gravity="center_horizontal"
+           android:orientation="horizontal"
+           >
+
+
+           <RadioButton
+               android:id="@+id/throatradioYES"
+               android:layout_width="80dp"
+               android:gravity="center"
+               android:layout_height="wrap_content"
+               android:button="@android:color/transparent"
+               android:checked="true"
+               android:paddingLeft="16sp"
+               android:paddingTop="3sp"
+               android:paddingRight="16sp"
+               android:layout_weight="1"
+               android:background="@drawable/radio_button_selector"
+               android:paddingBottom="3sp"
+               android:text="@string/yes"
+               android:textColor="@color/white" />
+
+           <RadioButton
+               android:id="@+id/throatradioNO"
+               android:gravity="center"
+               android:layout_width="80dp"
+               android:layout_weight="1"
+               android:background="@drawable/radio_button_selector"
+               android:layout_height="wrap_content"
+               android:button="@android:color/transparent"
+               android:paddingLeft="16sp"
+               android:paddingTop="3sp"
+               android:paddingRight="16sp"
+               android:paddingBottom="3sp"
+               android:text="@string/no"
+               android:textColor="@color/fbBlue" />
+
+       </RadioGroup>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginTop="20dp"
+           android:background="#D3D3D3"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+
+           />
+
+
+       <!--cough radio-->
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Dyspnea"
+           android:textColor="@color/black"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="8dp"
+           android:textSize="16sp"
+           android:layout_marginTop="20dp"
+           android:textStyle="bold"
+           />
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginEnd="8dp"
+           android:layout_marginRight="8dp"
+           android:gravity="center_horizontal"
+           android:orientation="horizontal"
+           >
+
+
+           <RadioButton
+               android:id="@+id/breathradioYES"
+               android:layout_width="80dp"
+               android:gravity="center"
+               android:layout_height="wrap_content"
+               android:button="@android:color/transparent"
+               android:checked="true"
+               android:paddingLeft="16sp"
+               android:paddingTop="3sp"
+               android:paddingRight="16sp"
+               android:layout_weight="1"
+               android:background="@drawable/radio_button_selector"
+               android:paddingBottom="3sp"
+               android:text="@string/yes"
+               android:textColor="@color/white" />
+
+           <RadioButton
+               android:id="@+id/breathradioNO"
+               android:gravity="center"
+               android:layout_width="80dp"
+               android:layout_weight="1"
+               android:background="@drawable/radio_button_selector"
+               android:layout_height="wrap_content"
+               android:button="@android:color/transparent"
+               android:paddingLeft="16sp"
+               android:paddingTop="3sp"
+               android:paddingRight="16sp"
+               android:paddingBottom="3sp"
+               android:text="@string/no"
+               android:textColor="@color/fbBlue" />
+
+       </RadioGroup>
+   </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/saveSymptomsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="18dp"
+        android:layout_gravity="bottom|center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/fbBlue"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        />
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_call"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Call Helpline"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+        <Button
+
+            android:id="@+id/callHelpLineBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Now"
+            android:textSize="18dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/fbBlue"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="40dp"
+            />
+
+</FrameLayout>

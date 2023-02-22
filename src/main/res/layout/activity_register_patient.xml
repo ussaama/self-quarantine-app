@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPatientActivity">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/regSubmit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="50dp"
+        android:orientation="vertical"
+     >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nameEtxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter You Name As Per CNIC"
+                android:textColor="#363A43"
+                android:textColorHint="#7A8089"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--mobile-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            android:text="Phone"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phoneEtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 03001234567 "
+            android:inputType="number"
+            android:textColor="#363A43"
+            android:textColorHint="#7A8089"
+            android:textSize="14sp" />
+        <!--mobile-->
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Emergency Phone (Guardian)"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/guardianphoneEtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 03001234567 "
+            android:inputType="number"
+            android:textColor="#363A43"
+            android:textColorHint="#7A8089"
+            android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Gender"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <RadioButton android:id="@+id/female"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Female"
+                android:textSize="12sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Of Birth"
+            android:textSize="18sp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Date Of Birth"
+            android:textColor="#363A43"
+            android:textSize="14sp"
+            android:textColorHint="#7A8089"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nationality"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinnerNationality"
+            android:layout_width="fill_parent"
+            android:background="@drawable/spinner_bg"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:entries="@array/nationalityitems"
+            android:spinnerMode="dropdown"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self-Quarantine Area"
+            android:layout_marginTop="7dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinnerState"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/provinceitems"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner_bg"
+            android:pointerIcon="arrow"
+            android:padding="10dp"
+            android:spinnerMode="dropdown"
+            />
+
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cityitems"
+            android:ellipsize="marquee"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/spinner_bg"
+            android:spinnerMode="dropdown"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#989494"
+        app:layout_constraintTop_toBottomOf="@id/scrollview"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guideline3"/>
+
+    <Button
+        android:id="@+id/regSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="#202020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

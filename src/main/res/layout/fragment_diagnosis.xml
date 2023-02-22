@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DiagnosisFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_marginTop="90dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center">
+
+       <ImageView
+           android:layout_width="180dp"
+           android:layout_height="180dp"
+           android:padding="40dp"
+           android:background="@drawable/person_border"
+           android:src="@drawable/ic_person_health_check" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Self Diagnose"
+    android:gravity="center"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/diagnose_status"
+           android:layout_marginTop="30dp"
+           android:gravity="center"
+           android:textColor="@color/black"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           />
+       <Button
+           android:id="@+id/diagnoseBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:text="Diagnose Now"
+           android:padding="10dp"
+           android:drawableRight="@drawable/ic_arrow_forward"
+           app:strokeColor="#202020"
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:textColor="@color/black"
+           />
+
+       <Button
+           android:id="@+id/diaghistoryBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:text="View History"
+           android:padding="10dp"
+           android:drawableRight="@drawable/ic_arrow_forward"
+           app:strokeColor="#202020"
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:textColor="@color/black"
+           />
+
+   </LinearLayout>
+
+</FrameLayout>
